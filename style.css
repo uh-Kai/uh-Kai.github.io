@@ -56,24 +56,23 @@
 footer {
       position: relative;
       padding: 20px;
-      background-color: #333;
       color: white;
       text-align: center;
     }
 
-    .learn-more {
+    .Images {
       position: absolute;
       bottom: 10px;
       right: 10px;
     }
 
-    .learn-more a {
+    .Images a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .learn-more a:hover {
+    .Images a:hover {
       text-decoration: underline;
     }
     footer {
