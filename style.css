@@ -61,7 +61,7 @@ footer {
     }
 
     .Images {
-      position: absolute;
+      position: center;
       bottom: 15px;
       right: 100px;
     }
