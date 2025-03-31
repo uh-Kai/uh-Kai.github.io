@@ -53,6 +53,29 @@
     ul {
       line-height: 1.8;
     }
+footer {
+      position: relative;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    .learn-more {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .learn-more a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .learn-more a:hover {
+      text-decoration: underline;
+    }
     footer {
       background-color: rgb(44,62,80) ;
       color: white;
