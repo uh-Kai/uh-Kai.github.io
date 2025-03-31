@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Pictures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: #222;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astronomy Pictures</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="photo">
+                <img src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+2" alt="Astronomy 2">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+3" alt="Astronomy 3">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+4" alt="Astronomy 4">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+5" alt="Astronomy 5">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+6" alt="Astronomy 6">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+7" alt="Astronomy 7">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300x200?text=Astronomy+8" alt="Astronomy 8">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Astronomy Pictures.</p>
+    </footer>
+</body>
+</html>
