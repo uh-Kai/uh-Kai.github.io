@@ -1,54 +1,119 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Challenge: Classes of elements</title>
-        <link rel="stylesheet" type="text/css" href="https://uh-kai.github.io/style.css">
-        
-        <style>
-    
-            .non-metal {
-                background-color: blue;
-                color:white;
-            }
-            .semi-metal {
-                background-color: purple;
-                color:white;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <h1>The Periodic Table</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Astronomy Webpage</title>
+  <link rel="stylesheet" type="text/css" href="https://uh-kai.github.io/style.css">
+</head>
+   <body>
 
-        <p>
-            There are three broad classes of elements:
-            <strong class="metal">metals</strong>,
-            <strong class="non-metal">non-metals</strong>,
-            and <strong class="semi-metal">semi-metals</strong>.
-        </p>
-        
-        <h2 class="metal">Metals</h2>
-        
-        <ul>
-            <li>Solid</li>
-            <li>Good conductors of electricity</li>
-            <li>Ductile</li>
-            <li>Malleable</li>
-        </ul>
-        
-        <h2 class="non-metal">Non-metals</h2>
-        
-        <ul>
-            <li>Brittle</li>
-            <li>Poor conductors</li>
-        </ul>
-        
-        <h2 class="semi-metal">Semi-metals (Metalloids)</h2>
-        
-        <ul>
-            <li>Partially conduct electricity</li>
-        </ul>
-        
-    </body>
+  <!-- Header -->
+  <header>
+    <h1>My Astronomy Webpage</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#planets">Planets</a></li>
+        <li><a href="#astronomers">Astronomers</a></li>
+        <li><a href="#events">Astronomical Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <main id="home">
+    <h2>Welcome to the Universe of Astronomy!</h2>
+    <p>Astronomy is the study of celestial objects, space, and the universe as a whole. It is a fascinating field that helps us understand the cosmos and our place within it.</p>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMWFhUWGBcbGBgYFxkaHRgYGhsZGxoYGB0ZHSggGBolHRkdITEhJSkrLi8uGB8zODMsNygtLisBCgoKDg0OFxAQGy0lHyUtLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBAIFAAEGB//EADsQAQACAQIFAgQEBQQCAgEFAAECESEAMQMEEkFRImEycYGRBROhsUJSwdHwBhRi4XLxFSOCBzOSosL/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EACIRAQEBAQADAAICAwEAAAAAAAABEQISITFBUQMTImFxBP/aAAwDAQACEQMRAD8A8Y4BlPTkS0syVfs+Hs6jxI3WKwfXvefnp/modqiECQSajLiH5lDI6m+IXsLUY+C9C4XC60ioZ3ceD1PYK+mdNlaLVRXZTNeDs/Xb5azjcBisZdvCJnNiYTO5q05LlTiHSHT6ZMpyF6apiQI2qtRVH4zBXUghwHMvVS0ypzeaz376suIqQ9JincXq9RfT6cVQks42e+NDdq8Ln/P8zpyPL3YyCjFrksxEB/mXt3+pjh9USJCuJUYR6UCVsup4lrc24glFG22mRYSIR9T1VIbjYjIusAVFN8p4LdGjHJ1zq4sxSUizqQpMspR6WsCq7IZDgyIqfAyiLW7UkBTDV/f21HjRtu2u1ttBQKBdAG3bY1JCPBCXS1RV02e+QfvTprl54WcpRPy0gRIWopHqunpMjIzg0v0NHgwNVd537vz1PhQKk0LVAk+9+sYoXGgqVnqMOaZcqDhJGwjLJhBv6eO2NSeAxwtEgyNiNSB6e916XI1dJqcoSZN31Xm9773ffTnC4lyI/wD1wOh4cpERuObl6mut2JHSuKq71n6SH8Oe9UAfw1v4w/XvovFhOWyyIwIldT6C7SwekvNlGpS4TK5dIGMFB7kRy0+NtbIvSNhXVHcP+Xm29vHwmlFZcBAbHzV4y/FfyXFn1xod74P88aZvpeqN2ZHZE3cP+e2shAy7p2yNYFcV09uzcjQgYTq/SNiZGy+5TvqUOHhuXTjGFvJjG2Lf/wAa1uMGSAd8fX/DWdN1dDbnOb89v/bq+IGMvY2T72P1z+2pxcitIFV5MgPnO/tpvgTiQnCebpiER9VfEysYgKVncxiwHT/FiysBvR3O+1t41WIOMeqQYP5mnB3k0K+dSY+tkRixHPT8JG+m/VbC1wy2U1riwGulVfpm+x2/XfROZ4U4S6ZVin00HqIyKTtVOpITn0RqLMlLqjOsQlC4sQr4jqGzb0xrbS8jO9l7+dMvEl8MpyqMZRM9QGXpM0QZeMZXOgL51UYyXEuFMpWOI7gJlM4cRNtjfGtw4h0dLRlbIjK2il/lAs918tGeIyt6I9JcmJ1Bm6/isrYCvh+dh4kKU77Fd3BirG/66k1wy8dLJWIU532DuuozTpoju2SvNZo3r9O2mOCxIL1pMlFjEPiM2kv4WPzz1m3Ton4lykYIHEhIaRj/AC0UyN4qZqr/AG1SAnHiy3u6KLzQ3YX2y/fUYVeRqnbGaac+9L7am1dYQasH1Zw0v7V99HYR6vzCL+WTLj1ghlIksopFzTWN+8isYP2z8vn41uXBlnDdW47eflo3EqSylOUpyZMhLVciyl8Sy3xprhcl+Ysun/64xlPiHBGTwoEum38xwMulzL+L6asRDi8cYxiQjGm7L6lqJlXa4sjGGb7aLyMYykRcX1erxjGMZ6vL31Hl4LFGQREUZVe+S90L987OocyQGoWgUq31JvI9MWMXFRbTu6gHKCKOEc/PWaJCPDrLIfYH/wD0azViPcaPVKTGXVG98i+FHN4zv83fUoGKYxyANZM3eGrdm7x41vlczGT8Vq+m63UFBlV0WW0G+mODwOqRkiXu2gXu1mi+2aNb5m3W8a4PLuTHUfxXtV4i+/nTn/x7C2cIpPhvQyLq3DGnErilt1nGi/h3DqTCVGYubz3ErcRu9q10f4pyB0MihCy+/pc/O6x769fHHOasc/yP4b1IxiCBhCQueqVS75Kx9qy/xfwjhgHTkiW3ee8tqp+etf6e/EYHokZtqo5ZOw0W5Krt1fPUud/HJXxIw4Pes7hC/wCWi0Bfc0S/xznWvEnLkG7r0xCtkwZaliSg499Jcb8O/lGravf71WrfkOd3JR6rPeikb/p9e2rHk4Qc0I+2zX/esZz0cc1yvJS64xLivpl6ukYyslFY09KNJ89G/wBSfgE+W4jwZSjPoBZ8OmKSpLQ37W+316PjcrFQibuKM2uPnvtqv5v8P6sxdmR05kxLhnPnqDz6fbW/6+fGz8s+3Lx5VrqDZP4gbdqtvtv29saPxeC9RLo6eq5RjU66VfgVuUdwy/Ci+bCXI1Z3Pk2X3b/vpg5FuMpOJF3T2uzJnNlmN9cLwcUjCW13EWl96usWbba1KP8ACsoxZLWULPir7G11W+u45H/TvE40HogoFYj82/1u/wBitc/+L8gwqLeLxVU2/vv9dZ8T4qPg8JG4pFsLaOlXsvwpXxYfGs43BihK7nJPSEvGVZZ62TsWZdsGnOJwe4qjlfOcnfz5299a5Pi9DGfSS6c1LMWVtMouEMelw1nvoZwnHg0YKbbmyoSh6QlR1G+6qldrl+H8urOoRlUFbGyNxj1wpPWWVdmc6LxOCklkVlsSgse3bGTWicjJQ+QDp9isFmNSJcSFYJCXZS70N+Lqj6fLWZuyy4o9N+o/i75vubab4nB9Kj2HprOxcsWdPVjf6Ghx4b1UtMdulPiv05P+Xe9vkGs5gLcMbKrzS0WfUzX9vbUGObd32AfP+V505DhYms0Y/D6V65LSdR8L0q271Wtc4MvUyW2i6wZQPU9ORxtnF26rEBxYhcRJdXS9VI7ZPVtnD/46HxMFAkXJYW4B9QZL7baLPh+LcF3WFq9lxdF6HxcuWwqu2DsBtoTYzlEhHqQl8NyS5VGOPhFqit9Q4yxUfRKNCZsnFp/8WxdMcHl1sCaBJmRF6YCCv8NApfnxel5ioSk7ALadIYr/AIm2Pt21BE4hUicblQRW/TUrcbOLPVe+o8fhsZPWRcXUZRoZx6o0wsxZ6e2Rp2Py1LGPUxlKQMmRUR3W6z3+LS0yOQVzhqrPO9i6Q1aLT7Y+SVk1usA13qqW7CpZs2763wOB1SBaO74C1ffbWcKRFerJKKNVZ9zGQ+nz0ISHJr+aSlGEuHFZRnLplJJEeiMXMp3mvA+ND43NSb6nqULluy9XV6lytu+9AbajwjuoGdxSwsPqlfXUYqCdpGcHZv5mdSRwxVXqsrGK723h2orz41rhTByWdzyf0fc0fhcIlGTg2oN19i8lbue3nQuGEV6o3hKbEf7nvjUB+anwmawuEVsjV9I/w2vqra+9XrNE5f8AFONw4kIoBsPDguc7yivfWaDp3meXYO9Egl00mE9FlUrFES/i3301+H8RlOMQIyXFsYxO+Wb01/5OkZSXO2d72v8A9fprfC4tGTf5Pjzt89b3PcdI6KHLk+JFlKdlEpPqQuvTHFRDBG6DGO1v+Hc4NQ4sTFlq1ka23SsV41z/AC3HnCMeI/DLqiOMoHVs3jqHPt41bcrzkZ437lZz8nD37d9en+P+SU4V5/lYHEklJRXxB2v7bff56a4HKhja9ntoPM8vKUo/ltpZi8P8qPy/XOpkeLw/TMu87I+dq/bWOrl10kWPD4IISjjw2H99TnwACPU4XA4/8jtkD7HtpTg9rum/+/shjVrJJt9QsnOe9131Ts4FLggjmUSrLqzxea1XPCna1T2973+lWYNW8ukO39Tf3qrTf20uQUZG1l19X9jT5M4WYRyIZLGqcX483WfB4NEjyxe2e+SsV93fv9tZMXNDQF7OPF7PbTPL8OWMItpHsbW5fb9NV71eL0D/AEN+KcLg8NhPF5Gt9cZ/rOceLxpTiXC2i0LcWHnB86NS4c0w4x41nO8u3UxHxt++sTPqxyPNfh8cZy3ZSdP9/ppXi8jG2rD33dvai81l3D3eteREb7C7foZ8+2h8tyEepWUoIXFiX6jMc2Mchk21qZWby4+XAf3zm8BRvVXW2f0NS4nBpYylGXSPS0t5D0oD5TqxV4zq+lyG7dVWKvHdta7GPfxpWXIyswblbVdGLceHOjPwMUHFg3aZc7b275376HPhlDnfI3sd7qqfrVaveZ5eVyZEcKIZiZk0BgLX0mP3UuPy7eatzd3d2l5/fJ31nrkYR4nLxI/xk7l1CBGsVTdrbK8fy+XQ89EeHcKk24yO2ZVYB2Merzs7LghWW6bx9K371ovAuMyUU6yVxagRxf8AMdJ9SvbbR4jFTDgW7YVAZxEUlW+aGnIGKvI6BMPHY7/e7tzvp/icv0lVeN62zhjm8nkHfUZQCp0lUDt6sNm5jHz/AGzYCvL8zLhixmhKMoSjbmEjIl0l5pxYYdYxOJKRCMYkpIdXSRLVjcuJZwwiV8fvetcTh0YM5V7PtZj/AN6i8MJdJLFp1JVj5C6Me+rf2KXtC7PVcW6k16XvbHtT7JonLcp1kqSokpKoLGIqRHKoPatrq8nhxuJxJ2Mni9RUj42WQLMqrV7uPGhc5zc5rxJzZSkRirukY9IDXw1EPoaPX1FoW9UlGi0lLLaRxm5Jd42q+2hnE9PTirvzXZrsXRfyPGj8LhdbGHpjcvjk0Zr4laIlXeN2+1BXJdY2xv8Ab99AYYKJNu+EKbG/J/fUJQ75Qov3f22a+Wi8XDdi3dUleFEMJk+eofkyaKckkxuG77npfs6kyfR0lMrzYhR4pvN5dvbOo8bht2FGNklXbt7/ALnk1I4oV6TBXf1Lfqbumk2rY0QlGUKLJ3S9USLALpKtl1Zu84xepFF1msXWaAuOXNyT00mG7xZ27nvrXNROpIrKJZBQipeGRbWLxf7aBwpMVJFPe/4Tz3R2z7umMXh6jspV/Mtr5a1rpDXAYnEi9S8LrI3UevosWo3Wy74e+meX45Ui0tLyhRdWHf1Py+uq5VC81j5X/wB50Xh4cmMnhOwuMmdt2nbTbnxvmuy/BOdGWXptH0lD32KIthVBro/9Rctw+JCPGh8X8aVTWNztjf8AfXnn4bxgfTKmzDe2fA7Y/wC+3Vf/ACvWeokMu+427Pl+2+uvPf8AjjpPfsvwX17bPlpPajv+znTUOCxqRWYrV33TJ9NtqrHnOHLhoFA95XXtk+330aXCz9N/8+WufxojLl3i31FNeTPv29q3u/bVpP8ADMWDHzEaBrx/nfS3+zkJIyZ7b0W18vGrfkOP1WNuTtvd5c47ffWdz6lZLlJxpfUfOsp32wOfkasOW4W3wl3hbDfu7/46suFwh9N34P3+umuPyqllXjcc/rjTOsClkVbW+Nvve9H/AFqY/mLKSsnu90xv9NWnF/D+ImKyUhiz38/fUp8jLv8ALP13fONXksVvB4ZsN/KnR58qdLXStV8Obs96/wDenT8Lf4XzsZb812rW48tM3pF7OX9P11udDFLPlLsB3WqNt+2zvegcf8LvIecGx/XXRy4Ctud6vP8Ajo8I5bC3fFbV9v8A3q8hY4jmfwv/AI12+2L0lxPwrpc0WYEuyXjw03fauzr0PjcrBu4g5cFD7Hj/AK1X8T8Oj23fJ5sqvPvrcoxwPMcoEXDdmUjXSVVWKPp87Y0hPkzO+PpZT+2O32133Mfg/ufOsaquL+GsElRY3kEapzdj2x76vrOOO/2zKgy+A+e/l9vfS8uTeqrDNK/wmytZo11XE/DaYywSvt2cJK6qrdv+LpbnOShw/hOp6ZRn1Ax681LhsdyulFz30XkeLmpEiy4oFUj8NrVV/MXmnb5aW4nLNWRoerpkyz6fipsH7fLVvzPLykDTjHt2N+3YrtRoBytRRaJA7hmMjD6WWyoFXcXO2s+O+mbFPODItboDOfTEoL7VQB7micDj8ThHWSlGTFhCq+HqGViUwzPvfUeDTHMcrlqkyFfxZqy6X6l7Y0DjN0ICG4UoqrL+Z9VfIDtrOApxOESIERHpl1MmJF6WVdC1/CBSqyv2NA/LKVdsFU5983Xv/wB6c40b7bEclBg8d13+fz0KfD6FHcs8nckObN9ZDcOBFiPE/MgvwP5bImHUSblI+GonpHv4yrOIoAFAOcX5WTi9/Gj8xxrHCS6rATpDOwHy2w150vxZqAq0JS3WVx9VfrqCXNxqvT0jEY2BY9+6lj31Fl0wY95IyuBcen4emW+bbMbG/aGPH12z+uicXiRSmNJ01WAM9XVZ1SVpFcZKzgSRHggX1LQ44hWc1/8AtuTZ9x1miR4cJZMDdEuJw7+txNZqAfG5/iTm8WfElKcvilJtlVYb3MG/jUuEtr27tY/bBafcNLRi71ja/wDPlpvlOd6Bj0xSTFWUbfTaAkh6VRTuxPGj/rcPnFJRvx5Ru6oq6KpbDwPbUpT/AIreq9/e7vO7j9dJclKcpwiRZspAQ/mZNVHG64x3rTvESUp9OI9iyXTFShTfp6qvu71trf1Dct6sZJ2BV5vuUZ/7PfVv+G/icuESg+q66V/hVG622Kze/tqphyk2ukZ3IAD41QDHqbSqP00ZAVCUQv0rkc1FstP11nLPbrOnTcCXDuNhcqkShxMSHLF3LP5aG0vUuDzTBIzcbXdmdvl9fOuchNJ2nTLfP0RPNn6af4HGK9RcVRzmirrPvrXlrpK7Hg8G47ir07omb7lHc3863/tmOArvh77b02b41Qctz047MpcPqs7e1oYZV393Or/kebjPPUfJ39/r/Z0dezFh+E8UZHaXvX3/AM9tdTyvBsrt/mdctxOWJ1RT5xe7nH/en/w38b6JdEopG6Oq9vZd/wDvXLyz1Ted+Oi5fkXe/wD140b/AGK7VnzpjlONGWzZqx4fCNdHPq4rofht1jHf3fPtov8A8Rm9W0TU9WuV/kqml+E/XS/F/BzxrodarVq/trleP+GSr2Nh/bSHG4THc/prtp8M1Xc9ymNtM6a57nTlMJT9+/y0vP8ADhMeN+2X9NWfNcpV9tIzJR2lrc7dKquL+GD2L2/ds+2qjmfw/cru1j/P8NdVHmKpkNeTOPbQZS4csy3/AM3vWtl+BxHOcjJHerv26nv82j7aqOa5Ep38Be19/fZ+5r0HneUIxuMr74vc/Rx/XVPxuUwtbif/AMvL/TWheXCcfgotGx4JUSOnNmHw+dttJy4FxxG2+z9iv8/TXXc5yb0kW6tQ8XQv2A+mqzmeBKVtggo5OqtgQ7GAxX20WOdjnJcJoezdffteH4c6jzvKxggcSM+qEJKCUoLBuklFwp9PGrL/AG0r2cXJG2sGU+R9g0vDiShPrCK+JRGLfmMsPnOMfLXOwYppHvj/AL1vn+n09DJiAFkYuA6sRcZ85cac/wBpKliXRbs0XXn9NKcQrti77eHp+Yf31lmwvzUIxkxHqrpBK6VA6vmXs+N/Ghw4qW4tKtBTI2Xs43PfR4N72x71V17qJ99ZPgvDUl09WRKti0WImHNeRHbQBOW/D+DKJKXMwgv8LGani0xkz9db0GHFj/Fw4yd7WRd52JAfQ1rUEODGJFbuXS0OOnOXOJekSsNyPGpcHhReFdS6+sFs6CMotFVfVcXO1GlYRyHv2y/TzpjmOKyI2lFgZu92TfeS7+3toQk+OsuqdSen5dkO1CXf01L85W1vwN7W4+V/vqHKcB4j0A9eekC+p/l3xgk37a1CZ043+fbx99FbW3K84cNyeoJF2+mW8ZwpKlFrDZu+weHGEbkk771Sq38qa/XVacSPYoRy5acdO3kc7/I0WPEZdINrgMd8hd7N7uryvxLlY9RFQoDqBr3f+R3vZ31qSmSWMvtVp8jSUBiSuTH05jmnJVne98tfWhzl5SJDdV8V5Mt3TvisZ/tutTpccpzpGWCt+5mvrtaN0Y1a8Di8PiLXold9UbbM3hf21zXCn5P6n309weYiU3+th/bVuOnPTqOS/FOJB9cWUT+X2+nyX2+eui4XG4fHj0+fIbnj665Ll+PGUTYwJmu55xeKe2NNcPm+LEiB1ZqNVdt4Xxn/ANVo641uV1XKcLi8CXVwZ9UX+CWaL7Out/Bv9QwnUZ+iXh/62159+E/jhQzil/p8/wBtdTyXE4XErZ8Vj+u/665+PXPxrrOvVd5w5js6nrjuLxOJwy+FPvs1/Uf8NWPJf6ii44gjjId++BvfWf7ZLlcev/P1959ug1mgcDmoTLjIdGJGukuuFln1mg8xLzqfElRpd48ZRafbSeZfqv5ngxf8xqt5vk6y/wCOrbjcHq1M4R09KXpejXIc1KI0obaruML8Mj566b8R/D49jbJ7apOJyxG+3n56p6PokTlG1uh3DBfkvG36aY4PEjOXqLXf9Ko+V61zUKbY42p+W/3zpGTj6v8An7/p51057AHNcuU3mnxeM5HsX4/pqp5jkDpX5VY3328dvuavTjm2/tqc+BWRz4QS2yxvXSew4LmuV6tjNeKrbxu6ruLCUcXg3E+SjfbXZ85y0RRPJnzVXjxmtUnH5K8XWd/t+nfVWbHNcblkizp9NJshmvVex2yZ1XPCzXUFja32z9/61q+5vl6379sfrT/7zqu5oUZJbdX/APjReMuzv27a59RixWMjpR6s1bFrb4RPhkY9m7bdtL8wKdbLqtf4rkyoVRz3+J3p0zzCdTRV7d0PGgyU6bMbghnxdZTGsMgcWFNHqwNg9waz428YxjWaLxONIUQE7dAV7ba1qGAdZ0kQbtVw+ArFn3bs20ThhsNLFtl8sh8wxi7TUY8M6sdVZpDL2H71qX+24hF4pCf5ZLo/M6UOpF6GWxJj2va9ZAcI9UgsjfeTg+bovD4gy6vTGiyPqppPTi3Pu+c7a1MGN1GOCm5XJGmt/PtH0+db5aHW9JQvdlGIRBW7rOPN9sqakb4/NxZE49I9S9JBgRDp6ASTjHzxaq3pjmYxncyRbHqUixJTaZxjGsdKzziL0YrAoSIJORdfw9QZtcUFD01t31Licw8SQykssCplQo2+JoMuV86t9WE9yfHWcE6RsPUWSz/ESUSkKqq/U/OMo8SROEeGkvVAEItClNv66R48Yxj8UWQzJFIlPTllh2vBjqbzsbgdcHiEgJRi7xksakCw6dpRr4roCXetbl/BOQk9IdV0yqJLA2W4xnGTevlpjhSYyjcRusPf7bYdt9I/nGNyiVq9RKWbQxVvSfQfbTHC42Y20F1Lvvead7/f5aNalWPBZmSLTth80H3xq04XOJi5HqaS+2LDDZ/bVTyXNS7HUOEuWQY4kRRYtGH+hrTRVZovOfiPb5n2+mt+vw3OnR8GUJXFlK1w7fc7993vrOG8eD/9c7Ks3w/fHn6GqLh86YilV5yfCHfba8ee1GnuBzt7y9NmLHZsC818tZsanTrPw/8A1FxijidNbV7/AOXrpOD+IwnkY0fFjfNe1W1+muCjxVL6QU3dzL3b/wA99aJztWT1dqxnfN5fGsdcR0nT0efBN4KPaks8+3bR+U4nF4Q9PFlJ/llWH3e57a4rkv8AUEiRH8tqvVm6lnbvVVvbh1b8L8YLpavsla5/15fRvdvqulfxqUipxb8m2kuV/G2KjBr9frqr43Oju4rH9/vej8PmYu6N7yBvs7XuGPvpnPX7GyT4vuW/GISzf0dN/wC9Hb99crLm41sX4azfj/O+pQ54/wAvW5LGbJV3zHHFW9V3EjcWRVG+c58aU/3m+zvnSnNc7UX77mrKmuBxeq7s+IcYbxVj40tzaGLur8V9K9g+2ocfna4dg27N9vP20jwIhHq2XenWveKjy4iDX67bjn5a1wua3rHmK/5/jqH5mPHtef8A1/1pLmlLfcpLsrx9jW4ytOYIzN8v+fO9V3NRl/E3QGe0TYNTjx8INmPcuseKQX7a3wpx6hp+T+x511lTnvxLlwWtmnIY2+vftV9zFap+a5dy7b1IumR498/rtrsPxLkYqodIvvR2z76oed5WuJKLSXmQYC6swNeDG/bTjNcnxuBT48f20pLl/SyM00gSsKxK+nppyb3jbbV/zfLAoVh3Kdu//Wq7icPcj1DISQXkUaQNrDDex41y65c6V4HF4JEJ8GUpd043SP0eHKse/wBttZoU+HTSF/N1msYyW9XTF7RWrrKMcYzef7bOovFn0/lrLpvq6ba6tuqtrrF60cQuKlg5jsIVi4+c26yXFztQXgxhvC1ct+9+NYDceDOTQW1YGcUy2+Vut8PhVAmgnVVdRbiz0j1V/wAtu2ocXiMndQKOp2PHsZdbjw80jjf5NU5xWf11JY/mcJJdQKwMglTNpA4BIl/+dHsnyfEjHeIuKtSvtjub+NA63ILnetmv3NF4EoWkxpqmNPTkt6X4sdrPnpI3B43Tk7fCSjGRTZ6rxZfhznFaJCTCNnxYpHIVe3v53OntelIlOc57NXnOe3z06TYjKDQ1GhjiMmUuiVgzRj8VfwnajRqF5JJSjBemN+q5UY7rTXbs6JOWbI9MbrL4Cxe7nx3NJR4goyMYsiEcBVlFXi1rLeicHj4lGipdK4j1HTddMkuJlsN6L21bsOrA45/DadJ1W7yov6X2fu7rPB53FO135zXzN8X/AFrVVHj59W3/ABA/Qo0fgxK9SnV8LVmGlfJhMXk0y+zq4GM66RsC7qurxdlXTXy1uMekqKNDaRPNelz1FBS+ce9Zw+IKRjWX4pXHDRUvUxImW98uXT/B50ihC8AMZ0xZYvquhgS9RFxgvy9JhlW3E521YhAx6Y3SgeVc1e+96NLjyhYW3vgU2qvGa21TQ5oCgzRu3TY4rF4rvh7OnIcdAdh296q6+r+umRryXPIc9kYyp2b7m51DijfbRP8AddpdK3ZK/lR4xnFd/bVITFrEaK8eS2t3L76Yh6E6eJLplGpViuoSUc+Tt3L02VqdOn5Pno/xIFVR5re7bvf661zPEnH4akP3o+eue5XiOZfl3GqFkx9X8xTnI42w99NnMscD1A7IhIsw933Ptozfq1dS5pS2xx2/ptXy1nG48wJXQ2DV2lY3/wAvVVy3Pn8a9OHtjb4R3dPy5/h1Ukx7d/fOEf66PA6LHnXfpd6fe7fetv01CX4lBx1Zxldyi6xjUOvhscSuUishte4u1150pP8AD+GS9TYisgb7pRgt+1Ptq8KvIxLmxKvHi6xVdtR4nM2GcVW2wVX6fPbSHD4Mumq2/rX9v30xw+DKsn+drrVlVqUuOVXcv+4vvvrPzHZMLl997MgY0HicJoaab2M71nHnzqXDqtx+2N+yZ/zvpyrQmXSqecmc+58v66djuJmvf7XjGDQuLx5FBYIhWauJGW/nGlamSM9987BX7GmQr/mIdMQkV7d/fPjXOfi/C4Zfqz0xcHdyi4pD539Mvc9xEBrwnfHvmj7d/lql50QLWnyNXV0Ub4Q/tnW5Qq/xLj9bOfTGI16YgAVWDtg/XO5qs4vEXeVpsr773d1duL+WdWfFJD1dNyKkCdQMW9lyYrNlXeqfmYl70fT67H6az1scrA5Spop98Z+5rNMcDnyESP5fDlXeUIq/NYus1zGOf4+VSPTFWi7ova+9bawmpWVtdi8hed3Y/XzrJxCuluzOKp8e/wA/fUeLxVRxgDAGxRfTu+Xd765sGPyyU3O//GJvRiNheXbx23B8fgShXVGuoU9y2Nn1H7ayPFxJbZNU/XN3nb9tRlCgyeovDtlKfDj9TUkken/je9d0urflt89S4fFbMpSPks2a7v8AfUuJwz8uyTmXweCsSUxd2VXb31nDIxqWHIsX23EvJf31JnF4vUlRI1sF+Vz75rtsanEl09SPR8PV02dR6ukk7Ndh20KcaS1znOWvf3TP11Lh8b0sX4XNb+qtzOPn++pG+EgvVHqiWY7o/wA0Xy75/h7akcZIEF9DIl0xS7PStdmlCyvnpXi8JhWXMSymKXTSOayI7O5ovK8UE6rY7pFBEukUQd+3fV8IkKZMY23KoKhhUOq6BcZxVP0JPjkgw4KvqVaKjd9gArG2tcp/9lcKoj1dROU+gyRHqV6Yx9O9Xe6moR40WhjRmk+L1IerOaNgr626ajPGoweDqq66i/Lmh3MaPCWKZIVFzHGUy0+Lzl9i8Izn0pRVB8Rd7+oE2RK32u84P0MZSgiSipIM0m5Rvk1pGo8TqTJam6AX/M7Hm/m6Z6wsOrptrJ2+WHft50hw5dOaw3hd/tnROX4r1Ro6kShcdSm94pou6+mt8/orPhTAqUaWm72EEwfe/ftqUeN37FXk3fqaS4B1TlGBd/mfDFoKXytERW3BlaHW+BfVUZXvtixESN7sjaO741umVb/7kByNbIJ1W+8b73mu+i8Tmj+FRpbozfarwVfnc99UceIPVvg712Qpz2P20T866QIdVl+unytr5D0+NtXlp1ZT4xd4LXtt8rds+dF4HMbdPiv1vN4q+3tpHleY4cWRPh/mOOl65EQjLKdNMiQVmnOMmh8Pj5vBn6niu/vnQdWk+Ji7bVUqjfffy+CtRhzfEJX1IOFaXNnd8Lu9t9A4fGlIFfS5e5EvoJT6cxpkVf8AMedCnxh74858+O++qxas48/PpiskhdDiiq6rDN1Xzzpvg/jFbn0vf9cba5viSL+Xh+ztf9dFHHpSwtW9i13z9q07VrreF+NQYs2NBR3w5TtRs++HU+V/EODK+phGrBFq87rjO9HntrivzXpR6jumxVBFvfPU4ravpnLczExXyl1MalFJYQRU9OShlHxq8va123PcXhQEjKy/bN/Lc/omgn4nGirJWpK6usYDw/trkJ85JznfNrbJK2x48bhnRfzVkd2VKFrd0iGSWH328mtbpdd1daspB6S89isF+UNUv4rxIZMdvmblVYP/AEbarXnkVRSkEekJVVuMphTv330lxuYZG/8A3/TT8GicwFtbdh3rtg77O+q/icWurbMUvpJbVIq/h+EGRsMt8izxMdzH3x/n6aWnwHoZ3E6N3rBeqgCN573XnO2sdTRqvlxFy5aC3wFH6Gs1qXB+Z8nWa4bRqt/Ljj1GRULwl0bZWu1mTbNRjw/v4/z66hSU6YgRmyZSTdtOq3f1Jn61/fWWEI8LC5I/Wvlf131uTfpAN/nV36nW+IdJQj1RFpusuH+V9tZ3kSvq2OnZbCn2q/rWpI0YbFVK2ooBXbv/AP1b30Q4hGW1lUnVYypCXudXqrQYtOx33/zc1mar3/fUhY8Zg9UJI1uelyVIx80+Wpf7ZKzHdMSGqrL03hvD3p8aXjG2tv6e+NHYyKjnOftZY9yu5/TUhZyG1hT0xRPpG2/O7/y9l0xy/KEuGzJwSEZTnD1DiUYgrGrl1WU9k3o0gH1v2/bRSdKZzh6bCUd6Y4asH6GNP/S3GRnBnbf0ntt57+NTilWBZVXbaWuE6acWJ47dWtcvw2XTDh3Kc5ESIZvFA9rWves7agL7g1j+u3z0fEb4PEk+q1IjZuAtVW0YPVVGM7Z1YCHEZWvxZAu0pxK630ryPA64rTcXLFAIooyEzJbN+1Vq65f8OejJgvb5efF67cy0yareJM6yTCKY/wDryD6ax013LxoHFbuVBt6erNbBnLVU/PO+rBhKKnmKOL9JUn/xLieo2z76R5kiT+H0i2E2Q52JG+O/v92zBWp8UilSZfEPbFtVd1ZT59VV5c4HA9EOIrU5TidISl+bA6oRRrp6mUe6uWsarJx6ZZlaVmKO2dx3vxjfW+GNss1gaQUbwXd/r+ujnvL7B7icCUIE5FdXVXdWMmMrP4akV6q3xdNbqjZtRFkROlv1U9nGbo6e9lJcNW2sFMttlKA+etymF9N5Ke3zwO19vbRf9E1Hi1Xc9q3+uPfVhKK8Lrw/xJG3oGVEZF+gkql2tGTVNlLzRVtbX2a+X1p8aPLi01E6bKxLq8WLey9tPN/BOnMFPq3HDmxD07Y8dRtXbUeHxpbRUX+/6bfppXiBUUl1WWlV0yHJ7gU9WN67OictzICNqIhYRcSvqb6vFVje+1v+jpmMmk6qHpXGHcH05+29/XReDzR00xFuHTJkHSHVYEmm8b7dJ50lGb8MW/bzQZ8Odu7jGtS4x0Uxjdy9Vy6gaxv09vC+p9q1sGmYceMgPV1q7BXRSr56t8vYNtT5rmPzXqlJlIs+GqiX07YKUMt5DOkbB9URrFN3GkXHfuU+fbUePxbjFH+FE6fi9S+r+ZtMv8ptRp3PqP8ABJTjKMepC5SrqzGNZQ7DnPntjRIcHolWPS7mTvnF9Rv8w0pDhzISmRuEWMZTpQZEkLMChfnH0RQ5nNXJdtv4lxEzecZ39tVsnwrDmOFWZR6VCimpRydfVezIdvfPbUOtjH0kiHEjm4xOqmWIqfDYfUfBpPj83dRMJ3oMyC7x2ceMbF6hPnGo2EQS5EfU025xaEzGP4fZ0dWWDTPC9RJZHVvcnMl/7rL/ANguY4cblI4g9Itq3KR/LZ1SHsoNb07r8Hikh6f4Y9TXV6Ykul6sbFj8VA73jSjzHVFioWjGx37kU2vHZujXK3IdEnd4yYbBdzbbc2+mt6rJSb2r6azWfQLycaKEa73222qV34bD7uhRjkFovLvR599MTnFKcMYhFAL9S3Lvs15wayyHweYlFGLSXWBrc7nvrcpIUubcVkWs39P8vW4IWdbTHPSbtD0tpjqC32sHWHCLTquqqhOpsKzti8121Ib8tOFKUeIdCwjKPURkyRlmF3KMUfVVXW163zHBidMCd8Ram9XpjsEG4mRMyFjSeHQuLwoUyiy+SbL2X5XmspsajynDJPTgtidUr6Yi5lKto1u06U3xYzEFGolVKMgi/LZztuaOcODBRd6Oq/T8OWiv5sFtG22s5eHDGUeIySypQpMXk6q3Nvm421Ll+XGM5xj6YLmQqjgEjshcura/pdIi7dJKigr05c1Vh7rn+X5aly3ErPTGVU+rbCNYRzs+16iTUrPTGL22itn06nd861WOzd5rwmf899ST4kfU0Rq8Vt5r5GpymyWVBuoGC2qDsWgHbGs5Yj1kZSqLvKn0tY2FQdwM012dDjNf8vz/AHe/fQVz+Cyt6CZCM66rZdKxtCRG7ztZumxnXr3+mfwv/ccP1Wtbt3ed714xys4nTXVdN2lD1disnTV7Zb9n2X/9LPxsh6ZeK134vrI3zXI/6y/BXgzQxv8AtbriuPxrCMqKAJd4nVKXbf4ne2gDBWvaP/1LnGYyi7714sf3D7a8Z4knhykZzFMV32ux9NNUVd76er80dftHneS4nB4kuHMCcaH1RQ6s4kKO5ke7oEKMSs7X/L/crFWbjeMz5LhdculYxMvVO+krPqoVtxR3kOhgwUkN04ybmz7Zzrnf3PjCfCi11uSLTQqWNO1B23v2xqfBLpWhaurrvdXnQpR+FZHqc7lZ/iZYbu7t+mmIcCzqjbRHrSo9LJaLdig373oKPUl9DQYUav8Ahut2+4eXTHAkdMpM1lVxSUsSs+Ko3aWDYZM1ek5WdTirpp9N52z9vp51nDlXYx3unzvsbaZcWno8t1RnKF9PDI9UwWIyn0Rcgxg43ye/aPH4rCTGLD0T+KASi1glGTmUcY7ZvvpOMWwcXS7bVY5QcZq/tovPHD/Nl+SzeFZ0vEolX/LpwOHGq9H8a1xOYLaK+v8A0aZ5jmCMfy4SuLdt4kdXpEKQx1VPN5xtpKPGAYsRvd3e2B7F71ml1I5ipDRLpf4hkSqqjMaGNHtu/SlA3GJRHq6bLr1RVUO8busOXzWb1CfFKY9WydIM+napTLO/Qb05MYQlzwRqLKXUR4eFhIuUbkjFTpPTRvW9JoMuAsGZHDfSmW49LPvdEc24zj2etlQ8ed4nQQF6ZSk1Z0siNOHvUzL9M6EcSUTLXZOotvPw3aekvHY9tLMNnfNNiRPBZlsvsVXfQYz7fu/vo8qTfC4zbSDUs2RKpErbI1pZm6n/ALtASWaY5MEaQC2kep7XGitZxuKTnadJJWrWorgFFaMdTd9++s6EuPzN8KHDsQlKWxYtVTWD/iNXbhdRenouvXcj1JXTXUIDZLNGOn9da4/CP4aI0yj1J1J1MaugnLHbG+2TQWz1UA3W1Yc1fvqSHW/zP3dZojHhuZTYvg4caxjtI/bWaggdOLlKiLsHxZxlMbZ/TQ5o1isZzu+fbWazWULJj+XHpJEnqJ5skWMaO1eM7X7aY53i/mx604UJcOMIdEIMWYWfmSo6WV7t23tjWazUgJJ0hKi/UO99qcX2vet9QhPo6ZRfUN/KqrfDn9ta1mpNyS6Y1RWGs+e+jw5d/KeKOCUYJaPVIkntKNQztl+us1mmJLnPy+p/LnxOnpOknXVTmQsWqH99saFLjrUGUmEV6S2gUXpHa99b1miofl4cNg9bK8oxTDcSpEjxbYvYoy6Z5njxnGR0ixlH/wC5slSSqLEUWUm2T1NhmsG9ZrV9RFuXkj1e/wA/mZ3NdR+Dc6wlKUZ9UYoRlSdRkihWComGqE8UZrNdP4/uNS+1x+L/AI/+ZCnPnt/njXEc7x21VbA37DGo5Lx01jwZrGs1mt9X0eiUZ9v6uMmfsamTKSTt8NVlvPuFC/T3xms1wrAqrVBc66W2yvS7NZfN4cajxeXSI9nq8V6Wn3s/9azWad3nU3wbAuXTG25Zx1FOzaV+2tSsIzqNXj0xpqsIGdzffWazWrzElzfEJSZgHUykxjEiRVX0hiMfAbaGSybfb6uH563rNZQbK3sffB+rX30TjXHp6oh6RO/UW1Jzv27YDGs1mn8IGxW2jtRi+x7GpSmxuJJY9VxqyKjRPpfY7l7fLWazRnpIcwuyGP65r3Nt9aKekyOyrjLuAYPvtrNZoQcabtRr00XbZhyVi287am8Z6oDT0nSDmi3DQXlX7eNZrNSaSVYyETetrLrx6l+75dF5fmHqj/EdZP8ALwR6v/FOnbG1VjWazWTCU5qrjKuADPgMB7Gs1ms1B//Z" alt="Night sky and stars">
+  </main>
+
+  <!-- Planets Section -->
+  <main id="planets">
+    <h2>Planets in Our Solar System</h2>
+    <p>Our solar system contains eight planets, each unique in its characteristics:</p>
+    
+
+    <ul>
+      <li><strong>Mercury:</strong> The smallest planet, closest to the Sun.</li>
+      <li><strong>Venus:</strong> Often called Earth's twin, with a thick, toxic atmosphere.</li>
+      <li><strong>Earth:</strong> Our home planet, the only one known to support life.</li>
+      <li><strong>Mars:</strong> The Red Planet, with a possibility for future human colonization.</li>
+      <li><strong>Jupiter:</strong> The gas giant, the largest planet in the solar system.</li>
+      <li><strong>Saturn:</strong> Known for its stunning rings.</li>
+      <li><strong>Uranus:</strong> A gas giant with a unique sideways rotation.</li>
+      <li><strong>Neptune:</strong> The farthest planet from the Sun, with intense winds and storms.</li>
+    </ul>
+     <table>
+  <thead>
+    <tr>
+      <th>Planet</th>
+      <th>Distance from Sun (km)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mercury</td>
+      <td>57.9 million</td>
+    </tr>
+    <tr>
+      <td>Venus</td>
+      <td>108.2 million</td>
+    </tr>
+    <tr>
+      <td>Earth</td>
+      <td>149.6 million</td>
+    </tr>
+    <tr>
+      <td>Mars</td>
+      <td>227.9 million</td>
+    </tr>
+    <tr>
+      <td>Jupiter</td>
+      <td>778.5 million</td>
+    </tr>
+    <tr>
+      <td>Saturn</td>
+      <td>1,429.4 million</td>
+    </tr>
+    <tr>
+      <td>Uranus</td>
+      <td>2,871.0 million</td>
+    </tr>
+    <tr>
+      <td>Neptune</td>
+      <td>4,495.1 million</td>
+    </tr>
+  </tbody>
+</table>
+  </main>
+
+  <!-- Astronomers Section -->
+  <main id="astronomers">
+    <h2>Famous Astronomers</h2>
+    <p>Many brilliant minds have contributed to our understanding of space:</p>
+    <ul>
+      <li><strong>Galileo Galilei:</strong> Known for his improvements to the telescope and discoveries about Jupiter's moons.</li>
+      <li><strong>Johannes Kepler:</strong> Developed the laws of planetary motion, which laid the groundwork for modern astronomy.</li>
+      <li><strong>Carl Sagan:</strong> A famous American astronomer who helped popularize science with the "Cosmos" TV series.</li>
+    </ul>
+  </main>
+
+  <!-- Astronomical Events Section -->
+  <main id="events">
+    <h2>Upcoming Astronomical Events</h2>
+    <p>Here are some exciting upcoming events to look forward to in the sky:</p>
+    <ul>
+      <li><strong>April 25, 2025:</strong> Partial Lunar Eclipse</li>
+      <li><strong>August 12, 2025:</strong> Perseid Meteor Shower (best viewed after midnight)</li>
+      <li><strong>October 14, 2025:</strong> Annular Solar Eclipse (the Sun will appear as a ring)</li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Astronomy Webpage</p>
+  </footer>
+
+</body>
 </html>
